@@ -1,1 +1,0 @@
-window.onload(alert("opened by naman"))
