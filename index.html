@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <nav>
         <div class="left">
-            <ul>
+            <ul class="nav-items-container">
                 <li>ShopAll</li>
                 <li>Electric Scooters</li>
                 <li>Accessories</li>
@@ -19,15 +24,75 @@
             </ul>
         </div>
         <div class="middle">
-            <p id="logo">logo</p>
+            <img id="logo" src="/images/logo.jpeg" height="50px">
+            <p class="p-2 mt-3 fs-5 fw-bolder text-black">Ear's<br> Wings</p>
         </div>
         <div class="right">
             <input type="text" class="search-box" placeholder="Search Products">
-            <i class="fa-solid fa-angle-right"></i>
-            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="search-go"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="cart-basket">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-basket-badge">0</span>
+            </div>
             <i class="fa-solid fa-user-large"></i>
         </div>
     </nav>
+    <section class="heroSection pt-5 m-4">
+        <div class="rounded-circle hero-background"></div>
+        <div class="container-fluid p-5 " >
+            <div class="row justify-content-center ">
+                <div class="col-lg-3 p-0 m-0">
+                    <div class="product-overview pb-2 ">
+                        <h1 class="fs-1 fw-bold text-secondary">JBL X250</h1>
+                        <h5 class=" fw-bold">64 Watt Fast Charging</h5>
+                    </div>
+                    <div class="product-information  fw-bold">
+                        <p>Informations:</p>
+                        <div class="d-flex text-center">
+                            <div class="product-features1 border rounded p-1 px-2 m-1 fw-bold">
+                                <h5 class="fw-bold fs-4">30 <br>Hr</h5>
+                                <p>Battery</p>
+                            </div>
+                            <div class="product-features2 border rounded  p-1 px-2 m-1">
+                                <h5 class="fw-bold fs-4">130 <br>gm</h5>
+                                <p>Weight</p>
+                            </div>
+                            <div class="product-features3 border rounded p-1 px-2 m-1">
+                                <h5 class="fw-bold fs-4">2500 <br> htz</h5>
+                                <p>Base</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cart-info mt-5 text-center">
+                        <span class="fs-4 fw-bold">&#8377;999.00</span>
+                        <button class="btn text-white bg-black px-4 m-3">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-image">
+                        <img src="images/product-02.png" alt="" >
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-lg-3 p-4 m-2 mx-4 text-start">
+                    <div class="row mx-2">
+                        <h4>Description </h4>
+                        <p class="text-justify">
+                            JBL Buds provide an immersive sound experience, featuring rich bass, crystal-clear audio, and long battery life. These wireless buds are perfect for music lovers and on-the-go users.
+                        </p>                    </div>
+                    <div class="row mx-3 pt-5 mt-4">
+                        <h3>Share</h3>
+                        <div class="social-icons d-flex">
+                            <a href=""> <span class="text-white bg-black rounded-circle fs-5 text-center mx-1"><i class="fa-brands fa-facebook"></i></span></a>
+                            <a href=""> <span class="text-white bg-black rounded-circle fs-5 text-center mx-1"><i class="fa-brands fa-whatsapp"></i></span></a>
+                            <a href=""> <span class="text-white bg-black rounded-circle fs-5 text-center mx-1"><i class="fa-brands fa-instagram"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
