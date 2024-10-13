@@ -11,6 +11,9 @@ nav {
     width: 100%;
     height: 80px;
     border-bottom: 1px solid black;
+    position: fixed;
+    top:0;
+    background-color: #f0f0f0;
 }
 
 .nav-items-container {
@@ -99,7 +102,133 @@ nav {
 
 .social-icons a span i{
     text-align: center;
-    padding:5px;
-    height: 30px;
-    width: 30px;
+    /* padding:5px; */
+    margin-top: 10px;
+    height: 25px;
+    width: 28px;
+    font-size: 1.59rem;
+}
+.heroSection {
+    padding-top: 50px;
+    margin-top: 70px;
+}
+
+.hero-background {
+    border-radius: 50%;
+    height:135vh;
+    background: linear-gradient( to top,rgba(157, 156, 219, 0.288),rgb(255, 255, 255) );
+}
+
+.heroContainer {
+    padding-top: 50px;
+    
+}
+
+.heroRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-details {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+
+.product-overview h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.product-overview h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.information {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-features1, .product-features2, .product-features3 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.product-features1 p, .product-features2 p, .product-features3 p {
+    margin: 0;
+    font-weight: bold;
+}
+.product-features1 h5, .product-features2 h5, .product-features3 h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.product-cart-info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-cart-info span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product-cart-info button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-image-container {
+    width: 25%;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.description-container {
+    width: 25%;
+    padding: 20px;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.description h4 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    text-align: justify;
+}
+
+.social-share {
+    margin-top: 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a span {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 10px;
 }
